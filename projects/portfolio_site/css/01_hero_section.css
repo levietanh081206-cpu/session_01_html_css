@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    background-color: blue;
+    width: 100%;
+    
+}
+
+#header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+}
+
+#header nav {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+#header nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.menu-toggle { 
+    display: none;
+}
+
+.menu-toggle:checked ~ nav {
+    display: flex;
+}
+
+main .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .hero h1 {
+    font-size: 3.5rem;
+}
+
+main .hero p {
+    font-size: 1.25rem;
+}
+
+main .hero a.cta-button {
+    border: 2px solid #334155;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: aqua;
+    text-decoration: none;
+}
+
+main .hero a.cta-button:hover {
+    scale: 2;
+    text-shadow: 1.5px #8b5cf6;
+}
+
+main .hero .background {
+    background-image: url("/resources/Toan-truong-scaled-1.webp");
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    transform: scale(1.05);
+    
+}
