@@ -84,5 +84,5 @@ main .hero .background {
     background-size: cover;
     filter: blur(4px);
     transform: scale(1.05);
-    
+    z-index: 101;
 }
