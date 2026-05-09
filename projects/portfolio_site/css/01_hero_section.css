@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+    overflow: scroll;
+}
+
 #header {
     display: flex;
-    position: fixed;
+    position: sticky; top: 0px;
     background-color: blue;
     width: 100%;
 }
@@ -54,6 +59,7 @@ main .hero {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: -65px;
 }
 
 main .hero h1 {
@@ -84,28 +90,4 @@ main .hero .background {
     filter: blur(4px);
     transform: scale(1.05);
     z-index: 101;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .about-grid { grid-template-columns: 1fr; }
-}
-
-.about-grid img {
-    width: 300px; height: 300px;
-    border-radius: 50%;
-    margin: 3rem; align-items: inherit;
-    padding: 0px;
-}
-
-.about-grid .about-cotent {
-    width: 300px;
-    border-radius: 10px;
-    margin: 3rem; justify-content: left;
 }
